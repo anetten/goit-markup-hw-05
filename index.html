@@ -528,9 +528,28 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
-          <input type="text" />
-          <input type="tel" />
-          <input type="email" />
+          <label class="form-label">
+            <span class="label-text">Name</span>
+            <input class="modal-input" name="user-name" type="text" />
+          </label>
+          <label class="form-label">
+            <span class="label-text">Phone</span>
+            <input class="modal-input" name="user-tel" type="tel" />
+          </label>
+          <label class="form-label">
+            <span class="label-text">Email</span>
+            <input class="modal-input" name="user-email" type="email" />
+          </label>
+          <label>
+            <span class="label-text">Comment</span>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              placeholder="Text input"
+              rows="3"
+            ></textarea>
+          </label>
+          <button class="send-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
